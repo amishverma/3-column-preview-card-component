@@ -1,0 +1,32 @@
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+@mixin para($color) {
+  color: $color;
+  font-size: 1.45rem;
+  line-height: 1.7;
+  letter-spacing: 0.6px;
+
+  opacity: 0.8;
+}
+
+@mixin heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+@mixin button($color) {
+  margin-top: 4rem;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  text-transform: capitalize;
+  color: $color;
+  font-weight: 700;
+}

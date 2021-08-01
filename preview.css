@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  color: #f2f2f2;
+}
+
+.container {
+  margin: 5% auto;
+  width: 50%;
+  min-width: 980px;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .column-1,
+.container .column-2,
+.container .column-3 {
+  width: 30%;
+  height: inherit;
+}
+
+.column-1 {
+  background-color: #e38826;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 46px;
+}
+
+.column-1 p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.45rem;
+  line-height: 1.7;
+  letter-spacing: 0.6px;
+  opacity: 0.8;
+}
+
+.column-1 h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+.column-1 .btn {
+  margin-top: 4rem;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  text-transform: capitalize;
+  color: #e38826;
+  font-weight: 700;
+}
+
+.column-1 .btn:active {
+  background-color: #e38826;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.column-2 {
+  background-color: #006970;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 46px;
+}
+
+.column-2 p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.45rem;
+  line-height: 1.7;
+  letter-spacing: 0.6px;
+  opacity: 0.8;
+}
+
+.column-2 h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+.column-2 .btn {
+  margin-top: 4rem;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  text-transform: capitalize;
+  color: #006970;
+  font-weight: 700;
+}
+
+.column-2 .btn:active {
+  background-color: #006970;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.column-3 {
+  background-color: #004241;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 46px;
+}
+
+.column-3 p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.45rem;
+  line-height: 1.7;
+  letter-spacing: 0.6px;
+  opacity: 0.8;
+}
+
+.column-3 h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+.column-3 .btn {
+  margin-top: 4rem;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  text-transform: capitalize;
+  color: #004241;
+  font-weight: 700;
+}
+
+.column-3 .btn:active {
+  background-color: #004241;
+  color: #fff;
+  border: 1px solid #050404;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    margin: 10px;
+    width: 100%;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .column-1,
+  .column-2,
+  .column-3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+}
+/*# sourceMappingURL=preview.css.map */

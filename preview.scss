@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+@import "variables";
+@import "mixin";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  color: $secondaryColor;
+}
+
+.container {
+  margin: 5% auto;
+
+  width: 50%;
+  min-width: 980px;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  & .column-1,
+  .column-2,
+  .column-3 {
+    width: 30%;
+    height: inherit;
+  }
+}
+
+.column-1 {
+  background-color: $brightOrange;
+  @include flex();
+  padding: 46px;
+
+  & p {
+    @include para($primaryColor);
+  }
+  & h2 {
+    @include heading();
+  }
+  & .btn {
+    @include button($brightOrange);
+
+    &:active {
+      background-color: $brightOrange;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.column-2 {
+  background-color: $DarkCyan;
+  @include flex();
+  padding: 46px;
+  & p {
+    @include para($primaryColor);
+  }
+  & h2 {
+    @include heading();
+  }
+  & .btn {
+    @include button($DarkCyan);
+    &:active {
+      background-color: $DarkCyan;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.column-3 {
+  background-color: $vDarkCyan;
+  @include flex();
+  padding: 46px;
+  & p {
+    @include para($primaryColor);
+  }
+  & h2 {
+    @include heading();
+  }
+  & .btn {
+    @include button($vDarkCyan);
+    &:active {
+      background-color: $vDarkCyan;
+      color: #fff;
+      border: 1px solid rgb(5, 4, 4);
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    margin: 10px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .column-1,
+  .column-2,
+  .column-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
