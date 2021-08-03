@@ -32,7 +32,7 @@ Users should be able to:
 ### links
 
 - Solution Url: [Solution](https://github.com/amishverma/3-column-preview-card-component)
-- Live Site Url: [Live Site]()
+- Live Site Url: [Live Site](https://amishverma.github.io/3-column-preview-card-component/)
 
 ## My process
 
