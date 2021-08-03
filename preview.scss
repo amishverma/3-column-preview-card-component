@@ -17,9 +17,9 @@ body {
 
 .container {
   margin: 5% auto;
-
-  width: 50%;
   min-width: 980px;
+  width: 50%;
+
   height: 65vh;
   display: flex;
   justify-content: center;
@@ -54,6 +54,9 @@ body {
       color: #fff;
       border: 1px solid #fff;
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -73,6 +76,9 @@ body {
       background-color: $DarkCyan;
       color: #fff;
       border: 1px solid #fff;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 }
@@ -96,22 +102,47 @@ body {
       color: #fff;
       border: 1px solid rgb(5, 4, 4);
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
+.author-name {
+  position: absolute;
+  color: black;
+  font-size: 2rem;
+  letter-spacing: 1px;
+
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//Moblie screen
 @media only screen and (max-width: 375px) {
+  .author-name {
+    display: none;
+  }
+  section {
+    margin: 0;
+  }
   .container {
+    width: 100%;
+    min-width: 0;
     margin: 0;
     height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    word-wrap: break-word;
 
     & .column-1,
     .column-2,
     .column-3 {
-      width: 40%;
+      width: 100vw;
+      border-radius: 0;
       display: flex;
       flex-direction: column;
       gap: 15px;
