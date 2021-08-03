@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
--[Desktop view](images/Desktopview.png)
+-[Desktop view](Desktopview.png)
 
--[Mobileview view](images/Mobileview.png)
+-[Mobileview view](Mobileview.png)
 
 ### links
 
